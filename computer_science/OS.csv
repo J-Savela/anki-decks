@@ -10,3 +10,10 @@
 "What does preemption mean in the context of processes and threads?","Preemption means that another process or thread is granted access to a resource (such as processor) before the original user of the resource is done. The original user is put back in queue to wait for their turn at the resource.","preemption process thread"
 "What does PCB stand for and consist of?","A PCB or process control block is a data structure that contains the administrative information needed by the OS for scheduling and other process control activities. The PCB of a process is not visible to the process itself.","process"
 "What are interrupts and why are they used?","Interrupts provide a method of preemption of the processor to run necessary OS functionalities. Interrupts provide a signalling facility that e.g allows slower peripherals to request service from the processor. The execution of the OS service is then interleaved with the execution of other processes.","interrupt terminology"
+"What is a process switch?","A process switch is the action of changing which process the processor is executing before the current process is finished.","process scheduling switching"
+"Why is process switching necessary?","It is necessary to enable multiprogramming.","process scheduling switching"
+"What does the OS need to do during a process switch?","<ol><li>Save the state of current process<li>Load the state of the next process<li>Go back to user mode</ol>","process switching"
+"Which events can trigger a process switch?","<ul><li>Current process exhausted its time slice<li>Preemption by a higher priority process<li>Current process completed or triggered trap</ul>",
+"What is a mode switch?","A mode switch refers to the changing of execution mode of the processor without switching the entire process.",
+"What does mode switching enable?","Mode switching enables OS routines to be run in the context of the current process.",
+"What advantage does a mode switch have compared to a process switch?","Mode switching is much faster than process switching since the entire state of the process does not need to be saved to memory.",
