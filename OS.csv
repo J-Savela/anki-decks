@@ -1,3 +1,4 @@
+"front","back","tags"
 "What states do processes generally have in OSes?","Processes generally have at least the following states:<div><b>new</b>, <b>blocked</b>, <b>ready</b>, <b>running</b>, <b>halted</b>.</div><div>Some OSes also include <b>ready &amp; suspended</b> as well as <b>blocked &amp; suspended</b> states.</div>","process"
 "What is the trace of a process (or thread)?","The trace of a process(thread) is its execution history, i.e a chronological sequence of memory locations of the executed instructions.","process"
 "What is the difference between user and kernel modes?","Application programs are run in user mode where the process can only access its own memory locations and doesn't have access to protected machine commands. Processes running in kernel mode on the other hand have access to the entire memory and can execute any machine command.",
